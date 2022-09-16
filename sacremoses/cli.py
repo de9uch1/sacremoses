@@ -58,7 +58,7 @@ def process_pipeline(processors, encoding, **kwargs):
             iterator = proc(list(iterator), **kwargs)
         if iterator:
             for item in iterator:
-                click.echo(item)
+                print(item)
 
 
 def processor(f, **kwargs):
